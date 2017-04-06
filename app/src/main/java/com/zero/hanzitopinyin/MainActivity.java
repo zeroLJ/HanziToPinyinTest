@@ -1,10 +1,9 @@
 package com.zero.hanzitopinyin;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView tView;
@@ -15,12 +14,9 @@ public class MainActivity extends AppCompatActivity {
         tView=new TextView(this);
         tView.setTextSize(24);
         tView.setTextColor(Color.BLACK);
-        String hanziString="你";
-        String pinyinString= HanZiToPinYinUtil.toPinYin(hanziString.charAt(0));
+        String hanziString = "你好";
+        String pinyinString= HanZiToPinYinUtil.stringToPinYin(hanziString);
         tView.setText("拼音："+pinyinString+"\n"+"汉字："+hanziString);
         setContentView(tView);
-
-        String s = HanZiToPinYinUtil.stringToPinYin("你好");
-        Toast.makeText(this, s, Toast.LENGTH_LONG).show();
     }
 }

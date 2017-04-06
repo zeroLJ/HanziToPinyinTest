@@ -26,5 +26,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
-    compile files('F:/Hanzi/HanziToPinyin/lib/pinyin4j-2.5.0.jar')
+    compile files('libs/jpinyin-1.0.jar')
 }
